@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
         _favoriteMeals.indexWhere((element) => element.id == mealId);
 
     setState(() {
-      if (existingIndex > 0) {
+      if (existingIndex >= 0) {
         _favoriteMeals.removeAt(existingIndex);
       } else {
         _favoriteMeals
